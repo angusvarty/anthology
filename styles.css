@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:rubik;
+}
+body {
+    background-image:linear-gradient(to right bottom, purple, blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.poem {
+    display:flex;
+    flex-direction:row;
+    width:calc(100vh / 3);
+    height:calc(100vh / 6);
+    background-color:white;
+    margin:10px;
+    transition: 1s all ease;
+    border-radius: 10px;
+    padding:5px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight:500;
+    box-shadow: 0 0 8px black;
+}
+.poem:hover {
+    box-shadow:0 0 25px black;
+    transition: 0.5s all ease;
+}
+.title {
+    font-size:30pt;
+    text-align:center;
+}
+.paragraph {
+    font-family:poppins;
+    padding:20px;
+    background-color: white;
+    border-radius: 10px;
+    margin:10px;
+}
