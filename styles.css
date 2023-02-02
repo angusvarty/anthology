@@ -3,8 +3,8 @@
 * {
     margin:0;
     padding:0;
-    box-sizing:border-box;
     font-family:rubik;
+    overflow:hidden;
 }
 body {
     background-image:linear-gradient(to right bottom, purple, blue);
@@ -14,12 +14,10 @@ body {
 }
 .poem {
     display:flex;
-    flex-direction:row;
     width:calc(100vh / 3);
-    height:calc(100vh / 6);
+    height:50px;
     background-color:white;
-    margin:10px;
-    transition: 1s all ease;
+    transition: 0.4s all ease;
     border-radius: 10px;
     padding:5px;
     text-align: center;
@@ -27,19 +25,36 @@ body {
     cursor: pointer;
     font-weight:500;
     box-shadow: 0 0 8px black;
+    margin-top:10px;
+    margin-left:5px;
+    margin-right:5px;
+    flex-direction: column;
 }
 .poem:hover {
     box-shadow:0 0 25px black;
-    transition: 0.5s all ease;
+    transition: 0.2s all ease;
 }
+
+
+
+
+
 .title {
     font-size:30pt;
     text-align:center;
+    margin-top:15px;
 }
 .paragraph {
     font-family:poppins;
     padding:20px;
     background-color: white;
     border-radius: 10px;
-    margin:10px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    padding:20px;
 }
